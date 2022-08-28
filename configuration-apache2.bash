@@ -11,12 +11,12 @@ echo "   Apache instalado"
 echo "----------------------"
 apt install unzip -y
 echo "----------------------"
-echo "Unzip instalado"
+echo "   Unzip instalado   "
 echo "----------------------"
 cd /tmp
 wget https://github.com/denilsonbonatti/linux-site-dio/archive/refs/heads/main.zip
 unzip main.zip
 cd linux-site-dio-main
 cp -R * /var/www/html/
-rm -r main.zip linux-site-dio
+rm -r /tmp/main.zip /tmp/linux-site-dio-main
 echo "Feito! Servidor web pronto para uso"
